@@ -1,0 +1,16 @@
+.callout[data-callout~=infobox] {
+    --callout-icon: message-square;
+    --callout-color: "";
+    background-color: var(--aside-bg, var(--background-secondary));
+    box-shadow: 0.3em 0.3em 0 var(--accent, var(--background-modifier-box-shadow)), 0 0 0 1px var(--accent, var(--background-modifier-box-shadow));
+    max-width: 400px;
+    margin: 1em;
+}
+
+
+.callout[data-callout~=infobox][data-callout-metadata~=right] {
+    border: 1px solid white;
+    float: right;
+    position: relative;
+    clear: left;
+}
